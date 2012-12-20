@@ -1,8 +1,6 @@
-#  lITENsITE
+#  HTML5-SKELETON
 
 ## Summary:
 
-A simple bootstrap site which provides markdown pages stored in directories. Essentially a CMS in the shell.
+A simple template to get a good start in projects based in HTML5 (based on html5reset.org)
 
-
-Based upon the HTML5-Reset framework
