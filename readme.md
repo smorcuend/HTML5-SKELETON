@@ -22,5 +22,5 @@
 * Folder structure restructured.
 * Favicon example added.
 * Style.css updated. Complete Media queries scaffold added.
-* HTML5-SKELETON demo template added.
+* HTML5-SKELETON demo template added [HTML5-SKELETON](https://smorcuend.github.com/HTML5-SKELETON).
 * Updated to modernizr.custom-2.6.2 (script optimized)
