@@ -1,28 +1,24 @@
 /*
-	HTML5 Reset :: style.css
+	HTML5-SKELETON :: style.css
 	----------------------------------------------------------
 	We have learned much from/been inspired by/taken code where offered from:
-	
+	html5 Reset					:: http://html5reset.org
 	Eric Meyer					:: http://ericmeyer.com
 	HTML5 Doctor				:: http://html5doctor.com
 	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
 -------------------------------------------------------------------------------*/
 
-/* Let's default this puppy out
+/* Let's default this puppy out - Reset Default Style
 -------------------------------------------------------------------------------*/
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}									
-
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+	margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;
+}
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article, section, figure, hgroup {  
+     display: block;  
+}  
+html{min-height: 100%}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
@@ -103,17 +99,27 @@ button {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }  
 
 
-/* Ok, this is where the fun starts.
+/* Ok, this is where the fun starts. 
 -------------------------------------------------------------------------------*/
 
-/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
-
-/* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+/* --------------------------------------------------------- */
+/* BASIC CSS ----- YOUR STYLES ----------------------------- */
+/* --------------------------------------------------------- */
+ 
+body {
+	font-family: 'Donegal One', serif; 
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background: #ccc;
+	text-shadow: 0px 0px 3px #bbb;
+}
 
 /* we like off-black for text */
 body, select, input, textarea {color: #333;}
+h1{font-size: 2em;padding: 1em;}
+h2{font-size: 1.6em;padding: 0.6em;}
 
 a {color: #03f;}
 a:hover {color: #69f;}
@@ -127,70 +133,214 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+.inline{display: inline-block;}
+
+.wrapper{
+	width: 80%;
+	min-height: 80%;
+	margin:2em auto;
+	box-shadow: 0px 0px 10px #111;
+	/* background: color position size repeat origin clip attachment image; */
+	background: transparent center center no-repeat url('../img/html5_skeleton.png');
+	background-size: contain;
+}
+
+.wrapper_content{
+	width: 100%;
+	min-height: 20em;
+	height: 20em;
+}
+
+header{
+	background-color: rgba(160,120,170,0.9);
+}
+header h1{font-size: 2em; padding: 1em;}
+.img_title{width: 10%; vertical-align: middle}
+
+/*Main menu*/
+nav ul li{padding: 0.5em;display: inline-block;}
+nav ul li a{text-decoration: none; color:darkblue; padding: 0.5em;}
+nav ul li a:hover{background-color: #333}
+
+article{
+	background-color: rgba(150,120,170,0.9);
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+
+aside{
+	background-color: rgba(150,130,170,0.9);
+	float:right;
+	width: 20%;
+	height: 100%;
+}
+
+footer{
+	background-color: rgba(160,120,170,0.9);
+	width: 100%;
+	height: 2em;
+}
+
+/* --------------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------- */
+/* --------------------------------------------------------- */
+
+ 
+/* --------------------------------------------------------- */
+/* SMARTPHONES, TABLETS & TINY DESKTOPS -------------------- */
+/* --------------------------------------------------------- */
+ 
+/* Old Smartphones (portrait and landscape) ---------------- */
+@media only screen and (min-device-width: 240px) and (max-device-width: 320px) {
+    /* YOUR STYLES */
+} 
+ 
+/* Old Smartphones (e.g. portrait) ------------------------- */
+@media only screen and (max-width: 319px) {
+    /* YOUR STYLES */
+} 
+ 
+/* Smartphones (portrait and landscape) -------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    /* YOUR STYLES */
+}
+  
+/* Smartphones (portrait) & Old SP (landscape) ------------- */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* YOUR STYLES */
+}
+  
+/* Smartphones (landscape) & Old Tablets (Portrait) -------- */
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+    /* YOUR STYLES */
+}
+  
+/* Smartphones & Tablets (portrait & landscape) ------------ */
+@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
+    /* YOUR STYLES */
+} 
+ 
+/* Smartphones & Tablets (portrait) & Tiny Desktops -------- */
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+    /* YOUR STYLES */
+}
+  
+/* Smartphones & Tablets (landscape) & Splitted Desktops --- */
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    /* YOUR STYLES */
+} 
+ 
+ 
+/* --------------------------------------------------------- */
+/* DEVICES BY RATIO ---------------------------------------- */
+/* --------------------------------------------------------- */
+ 
+/* LowRes (e.g. 240x320 / 320x480) ------------------------- */
+@media only screen and (min--moz-device-pixel-ratio: 0.75), only screen and (-o-min-device-pixel-ratio: 3/4), only screen and (-webkit-min-device-pixel-ratio: 0.75), only screen and (min-device-pixel-ratio: 0.75), only screen and (min-resolution: 0.75dppx) {
+    /* YOUR STYLES */
+}
+ 
+ 
+/* HighRes ------------------------------------------------- */
+@media only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    /* YOUR STYLES */
+     
+    /* e.g. HighRes Logo (use _2x as extension for double-sized images) */
+    /* .logo {background-image: url(logo_2x.png); background-size: 50%;} */
+} 
+ 
+/* RetinaRes Smartphones (e.g. iPhone 4 / portrait) -------- */
+@media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
+    /* YOUR STYLES */
+} 
+ 
+/* RetinaRes Smartphones (e.g. iPhone 4 / landscape) ------- */
+@media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: landscape), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-resolution: 1.5dppx) and (orientation: landscape) {
+    /* YOUR STYLES */
+} 
+ 
+ 
+/* --------------------------------------------------------- */
+/* IPADS --------------------------------------------------- */
+/* --------------------------------------------------------- */
+ 
+/* iPads (portrait and landscape) -------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* YOUR STYLES */
+} 
+ 
+/* iPads (portrait) ---------------------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* YOUR STYLES */
+} 
+ 
+/* iPads (landscape) --------------------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* YOUR STYLES */
+}
+  
+/* iPad Retina (iPad 3; portrait and landscape) ------------ */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) {
+    /* YOUR STYLES */
+}
+ 
+ 
+/* --------------------------------------------------------- */
+/* COMPUTERS / OTHER DEVICES ------------------------------- */
+/* --------------------------------------------------------- */
+ 
+/* Displays/Screens (e.g. MacBook @ 1280x800) -------------- */
+@media only screen and (min-width: 1250px) and (max-width: 1409px) {
+    /* YOUR STYLES */
+} 
+ 
+/* Displays/Screens (e.g. 19" WS @ 1440x900) --------------- */
+@media only screen and (min-width: 1410px) and (max-width: 1649px) {
+    /* YOUR STYLES */
+} 
+ 
+/* Displays/Screens (e.g. 22" WS @ 1680x1050) -------------- */
+@media only screen and (min-width: 1650px) and (max-width: 1889px) {
+    /* YOUR STYLES */
+}
+ 
+ /* Displays/Screens (e.g. 24" WS @ 1920x1080) -------------- */
+@media only screen and (min-width: 1890px) and (max-width: 2529px) {
+    /* YOUR STYLES */
+}
+ 
+/* Really Large Displays/Screens (e.g. 2560x1440) ---------- */
+@media only screen and (min-width: 2530px) {
+    /* YOUR STYLES */
+}
+
+/* --------------------------------------------------------- */
+/* APPLE MACBOOK PRO RETINA ETC. --------------------------- */
+/* --------------------------------------------------------- */
+ 
+/* Retina Displays/Screens (2880x1800) --------------------- */
+@media only screen and (min--moz-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio: 2),only screen and (min-resolution: 2dppx) {
+	/* YOUR STYLES */
+}
 
 
+/* --------------------------------------------------------- */
+/* PRINT STYLES -------------------------------------------- */
+/* --------------------------------------------------------- */
 
-/* Print styles!
--------------------------------------------------------------------------------*/
 @media print {
-/* Styles */
+	/* YOUR STYLES */
 }
 
-/* Media queries!
--------------------------------------------------------------------------------*/
 
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+ 
+ 
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-}
+ 
+ 
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-
-/* Display orientation ---------- */
-@media all and (orientation: portrait) {
-/* Styles */	
-}
-
-@media all and (orientation: landscape) {
-/* Styles */	
-}
+ 
+ 
+ 
+ 
