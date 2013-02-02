@@ -15,9 +15,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 	margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;
 }
 /* Tell the browser to render HTML 5 elements as block */  
-header, footer, aside, nav, article, section, figure, hgroup {  
-     display: block;  
-}  
+header, footer, aside, nav, article, section, figure, hgroup { display: block; }  
 html{min-height: 100%}
 
 /* Responsive images and other embedded objects
@@ -152,7 +150,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 }
 
 header{
-	background-color: rgba(160,120,170,0.9);
+	background-color: rgba(160,150,170,0.9);
 }
 header h1{font-size: 2em; padding: 1em;}
 .img_title{width: 10%; vertical-align: middle}
@@ -170,16 +168,16 @@ article{
 }
 
 aside{
-	background-color: rgba(150,130,170,0.9);
+	background-color: rgba(150,130,190,0.9);
 	float:right;
 	width: 20%;
 	height: 100%;
 }
 
 footer{
-	background-color: rgba(160,120,170,0.9);
-	width: 100%;
-	height: 2em;
+	background-color: rgba(120,120,170,0.9);
+	width: 98%;
+	padding: 1%;
 }
 
 /* --------------------------------------------------------- */

@@ -103,7 +103,7 @@
 		</div>
 		
 		<footer class="clearfix">			
-			<p><small>HTML5 SKELETON <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;"> &copy; </span> <span id="copyright_year"></span> - All rights reversed.</small></p>			
+			<p><small>HTML5 SKELETON. Designed by <a href="http://smorcuend.es">smorcuend</a> <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;"> &copy; </span> <span id="copyright_year"></span> - All rights reversed.</small></p>			
 		</footer>
 		<!--Fork me on Github -->
 		<a href="https://github.com/smorcuend/HTML5-SKELETON"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
@@ -111,30 +111,29 @@
 	</div><!--wrapper -->
 
 	<!-- here comes the javascript -->
-
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
 
 	<!-- this is where we put our custom functions -->
 	<script type="text/javascript" src="js/functions.js"></script>
 
 	<!-- Asynchronous google analytics; this is the official snippet.
-		 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+		 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable. -->
 		 
-	<script>
+	<script type="text/javascript">
 
-		var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-			_gaq.push(['_trackPageview']);
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-31122385-3']);
+	  _gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
 	</script>
-	-->
+	
   
 </body>
 </html>

@@ -9,14 +9,6 @@
 
 ### ChangeLog:
 
-#####HTML5-SKELETON v0.1
-
-* Conditionals comments in HTML code removed.
-* Old css styles removed (versions older than IE8 are dead).
-* Updated to jquery 1.8.3 (the jquery library is now retrieved from googleapis)
-* Updated to modernizr 2.6.2.
-* <aside> element example added.
-
 #####HTML5-SKELETON v0.2
 
 * Folder structure restructured.
@@ -24,3 +16,12 @@
 * Style.css updated. Complete Media queries scaffold added.
 * HTML5-SKELETON demo template added ([HTML5-SKELETON](http://smorcuend.github.com/HTML5-SKELETON)).
 * Updated to modernizr.custom-2.6.2 (script optimized)
+* Updated jQuery to 1.9.0 & added jQuery CDN
+
+#####HTML5-SKELETON v0.1
+
+* Conditionals comments in HTML code removed.
+* Old css styles removed (versions older than IE8 are dead).
+* Updated to jquery 1.8.3 (the jquery library is now retrieved from googleapis)
+* Updated to modernizr 2.6.2.
+* <aside> element example added.
